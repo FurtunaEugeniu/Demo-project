@@ -1,0 +1,624 @@
+@import 'fonts.css';
+body {
+   font-family: 'Open Sans';
+}
+ul,
+li {
+   display: block;
+   padding: 0;
+   margin: 0;
+}
+/*Meniul*/
+.navbar {
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   align-items: center;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+}
+
+.brand-title {
+   font-size: 1.5rem;
+   margin: .5rem;
+}
+
+.navbar-links {
+   height: 100%;
+}
+
+.navbar-links ul {
+   display: flex;
+   margin: 0;
+   padding: 0;
+}
+
+.navbar-links li {
+   list-style: none;
+}
+
+.navbar-links li a {
+   display: block;
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   padding: 1rem;
+}
+
+.navbar-links li:hover {
+   background-color: rgb(204, 204, 204);
+}
+
+.menu-button {
+   position: absolute;
+   top: .75rem;
+   right: 1rem;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 21px;
+}
+
+.menu-button .bar {
+   height: 3px;
+   width: 100%;
+   background-color: rgb(0, 0, 0);
+   border-radius: 10px;
+}
+
+
+/**/
+.logo{
+   height: 50px;
+   margin: 10px;
+}
+.menu-bar {
+   /* background: #fff; */
+   /* padding: 20px 0; */
+   color: #212121;
+}
+.menu__item {
+   margin-left: 37px;
+}
+.menu__item a {
+   font-family: 'Open Sans Semibold';
+   font-size: 20px;
+   color: #a3a3a3;
+   text-decoration: none;
+}
+.menu__item a:hover {
+   text-decoration: none;
+   color: #fcf8f8;
+}
+/*Deasupra sailtului*/
+.header {
+   color: white;
+   text-align: center;
+   padding: 180px 0;
+   background-size: cover;
+   background-position: 0 100%;
+   background-image: url(../img/background.jpg);
+}
+.header__title {
+   font-size: 55px;
+}
+.header__text {
+   font-size: 20px;
+   margin-bottom: 100px;
+}
+.text_titlu{
+   color: black;
+}
+.a-meniu{
+   text-decoration: none;
+   color: #000000;
+}
+.button {
+   text-transform: uppercase;
+   cursor: pointer;
+   padding: 10px 25px;
+   margin: 0 10px;
+   color: white;
+   transition: 0.3s;
+   background: #be7903;
+   border: 2px solid #be7903;
+}
+.button:hover {
+   background: transparent;
+   border: 2px solid white;
+}
+
+/*Despre moi*/
+.Despre {
+   padding-top: 120px;
+   padding-bottom: 125px;
+   color: black;
+   background: white;
+   text-align: center;
+}
+.Despre__title {
+   font-size: 30px;
+   font-weight: bold;
+   margin: 15px 0 50px 0;
+
+}
+.Despre__text {
+   color: #212121;
+   font-size: 15px;
+   margin-bottom: 110px;
+}
+.Despre_h3 {
+   margin-top: 30px;
+   margin-bottom: 20px;
+   font-family: 'Open Sans Semibold';
+   font-size: 20px;
+}
+/*Info*/
+.Info {
+   padding-top: 70px;
+   padding-bottom: 125px;
+   color: black;
+   background: #a87c14;
+   text-align: center;
+}
+.Info_card {
+   background: white;
+   padding: 50px 40px 40px;
+   transition: 0.3s;
+   margin-bottom: 30px;
+}
+.Info_card:hover {
+   background: #bec1c1;
+   color: white;
+   box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+.Info_card:hover .icon {
+   color: white;
+}
+.Info_card:hover .button-services {
+   border: 2px solid white;
+   color: white;
+}
+.icon {
+   transition: 0.3s;
+   font-size: 60px;
+   color: black;
+}
+.button-service {
+   margin-top: 20px;
+   transition: 0.3s;
+   color: black;
+   text-transform: uppercase;
+   border: 2px solid black;
+   background: transparent;
+   padding: 10px 12px 10px;
+   font-family: 'Open Sans Semibold';
+}
+.button-services:hover {
+   cursor: pointer;
+}
+/*Portofoliul*/
+.portfolio {
+   text-align: center;
+   padding-top: 120px;
+   padding-bottom: 135px;
+}
+.portfolio button:hover,
+.focused {
+   color: black;
+   background: transparent;
+   border: 2px solid #be7903;
+}
+.portfolio img {
+   max-width: 100%;
+   margin-bottom: 30px;
+}
+.filter {
+   padding: 120px 0;
+}
+div[filter]:hover img {
+   filter: brightness(50%);
+   transition: 0.3s;
+}
+.text {
+   display: none;
+}
+div[filter]:hover .text {
+   display: block;
+   width: 100%;
+   color: #fff;
+   position: absolute;
+   top: 40%;
+   left: 0;
+   z-index: 3;
+   text-align: center;
+}
+/* Preturile */
+.preturi {
+   padding-top: 165px;
+   padding-bottom: 125px;
+   color: black;
+   background: #f0f1f1;
+   text-align: center;
+}
+.pret {
+   transition: 0.5s;
+   background: #fff;
+   margin-bottom: 20px;
+}
+.pret:hover {
+   box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
+}
+.pret__head {
+   color: white;
+   padding-top: 40px;
+   padding-bottom: 65px;
+   background-image: url(../img/pret_bg.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   max-height: 211px;
+}
+.pret__head p {
+   font-size: 25px;
+}
+.pret__head {
+   font-size: 50px;
+}
+.pret__head sub {
+   vertical-align: middle;
+   font-size: 17px;
+}
+.pret__head sup {
+   vertical-align: middle;
+   font-size: 25px;
+}
+.pret__body {
+   font-size: 17px;
+   color: #212121;
+}
+.pret__body ul li {
+   padding-top: 28px;
+   padding-bottom: 12px;
+   margin: 0 auto;
+   max-width: 175px;
+   border-bottom: 1px solid #bfbfbf;
+}
+.pret__footer {
+   padding: 60px 0;
+}
+.pret__footer button {
+   cursor: pointer;
+   color: #212121;
+   background: transparent;
+   width: 180px;
+   height: 60px;
+   font-size: 20px;
+   border: 2px solid #212121;
+   transition: 0.3s;
+}
+.pret__footer button:hover {
+   text-transform: uppercase;
+   color: white;
+   background: #be7903;
+   border: none;
+}
+/* Personalul */
+.Personalul {
+   padding-top: 165px;
+   padding-bottom: 125px;
+   color: black;
+   background: #fff;
+   text-align: center;
+}
+.Personalul h4 {
+   margin-top: 30px;
+   font-size: 20px;
+   font-family: 'Open Sans Semibold';
+}
+.Personalul p {
+   font-size: 15px;
+   margin-bottom: 30px;
+}
+.icons {
+   display: flex;
+   justify-content: center;
+}
+.icons a i {
+   transition: 0.3s;
+}
+.icons i:nth-child(1) {
+   color: #f0f1f1;
+}
+.icons i:nth-child(2) {
+   color: #be7903;
+}
+.icons a:hover i:nth-child(1) {
+   color: #3949ab;
+}
+.icons a:hover i:nth-child(2) {
+   color: #fff;
+}
+.Personalul img {
+   margin: 0 auto;
+   max-width: 340px;
+}
+.multiple-items {
+   margin-top: 125px;
+}
+.dots-style {
+   margin-top: 115px;
+   display: flex;
+   justify-content: center;
+}
+.dots-style button {
+   background: #be7903;
+   border: none;
+   border-radius: 50%;
+   font-size: 0;
+   height: 15px;
+   width: 15px;
+   margin: 5px;
+}
+.dots-style li[class="slick-active"] button {
+   background: #3949ab;
+}
+/*Informatile de activitatea noastra*/
+.blog__title{
+display: flex;
+justify-content: center;
+margin: 75px;
+
+}
+.blog-item {
+   width: 48%;
+}
+.left>div:first-child {
+   order: 1;
+}
+.left>div:last-child {
+   order: 2;
+}
+.right>div:first-child {
+   order: 2;
+}
+.right>div:last-child {
+   order: 1;
+}
+.blog {
+   text-align: left;
+   margin-top: 60px;
+}
+.blog a {
+   font-size: 25px;
+   color: #000000;
+   font-family: 'Open Sans Semibold';
+   text-decoration: none;
+}
+.blog div {
+   margin-top: 15px;
+   margin-bottom: 20px;
+}
+.blog span {
+   font-size: 17px;
+   font-family: 'Open Sans Semibold';
+   margin-right: 35px;
+}
+.blog i {
+   margin-right: 15px;
+}
+.blog p {
+   font-size: 15px;
+}
+.button_blog {
+   width: 220px;
+   height: 70px;
+   text-transform: uppercase;
+   color: white;
+   font-size: 20px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   transition: 0.3s;
+   border: 2px solid #be7903;
+   cursor: pointer;
+   background: #be7903;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+}
+.button_blog:hover {
+   background: transparent;
+   color: #000;
+}
+/*Sub solul*/
+.footer {
+   padding-top: 165px;
+   padding-bottom: 125px;
+   color: #fff;
+   background-image: url(../img/subsolu.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   text-align: center;
+}
+.footer .Despre__text {
+   color: #fff;
+}
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope {
+   font-size: 62px;
+   color: #fff;
+}
+.circle {
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #3949ab;
+   width: 100px;
+   height: 100px;
+   margin: 0 auto 35px;
+}
+.circle+p {
+   font-size: 20px;
+}
+.footer input,
+.footer textarea {
+   padding: 30px;
+   width: 100%;
+   border-radius: 10px;
+   border: none;
+}
+.footer input:focus,
+.footer textarea:focus {
+   outline: none;
+}
+.footer textarea {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   resize: none;
+}
+.footer button {
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+   text-transform: uppercase;
+   color: #212121;
+   padding: 20px 80px;
+   border-radius: 10px;
+   border: none;
+   transition: 0.3s
+}
+.footer button:hover {
+   opacity: 0.6;
+}
+.rules {
+   padding: 20px 0;
+   text-align: center;
+   font-weight: 600;
+}
+.form {
+   margin-top: 70px;
+}
+/*Navigatiea pe sait*/
+#toTop {
+   z-index: 999;
+   width: 40px;
+   height: 40px;
+   border: none;
+   font-size: 20px;
+   border-radius: 3px;
+   background: #be7903;
+   text-align: center;
+   padding: 5px;
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   cursor: pointer;
+   display: none;
+   color: #000000;
+}
+.menu-icon {
+   display: none;
+}
+/* optimizarea saitului pentru dispozitive mai mici  la 1000px*/
+/* meniul */
+@media (max-width: 1200px) {
+   .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .menu-button {
+      display: flex;
+      margin: 15px;
+   }
+
+   .navbar-links {
+      display: none;
+      width: 100%;
+   }
+
+   .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+   }
+
+   .navbar-links ul li {
+      text-align: center;
+   }
+
+   .navbar-links ul li a {
+      padding: .5rem 1rem;
+   }
+
+   .navbar-links.active {
+      display: flex;
+   }
+}
+@media screen and (max-width: 1200px) {
+   nav {
+      display: none;
+   }
+   .logo-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .menu-icon {
+      display: block;
+      background: #be7903;
+      border: none;
+      font-size: 25px;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+   }
+   .blog {
+      margin-top: 10px;
+   }
+   .footer input, .footer textarea {
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+}
+/* optimizarea saitului pentru dispozitive telefone mobile la 500px */
+@media screen and (max-width: 500px) {
+   .header, .Despre, .service, .portfolio, .filter, .pricing, .footer {
+      padding: 20px;
+   }
+   .header__title {
+      font-size: 45px;
+   }
+   .header__text, .about__text {
+      margin-bottom: 20px;
+   }
+   .button {
+      margin-bottom: 10px;
+   }
+   .Personalul {
+      padding: 20px 0;
+
+   }
+   .Personalul img {
+      max-width: 320px;
+   }
+   .dots-style, .button_blog, .multiple-items {
+      margin-top: 10px;
+   }
+   .left, .right {
+      flex-direction: column;
+   }
+   .blog-item, .blog {
+      width: 100%;
+   }
+   .right>div:first-child {
+      order: 1;
+   }
+   .right>div:last-child {
+      order: 2;
+   }
+   .blog i {
+      margin-right: 5px;
+   }
+   .form {
+      margin-top: 20px;
+   }
+}
